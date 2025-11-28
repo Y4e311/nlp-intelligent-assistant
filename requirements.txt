@@ -1,0 +1,38 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# 模型文件
+*.bin
+*.safetensors
+*.pth
+
+# 數據和作業文件
+dataset/
+2025ML-spamEmail/
+HW1.py
+HW2.py
+EOF
+
+# 確認內容
+cat .gitignore
