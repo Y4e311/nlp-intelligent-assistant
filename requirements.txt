@@ -1,38 +1,12 @@
-cat > .gitignore << 'EOF'
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# Virtual Environment
-venv/
-env/
-.venv/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Streamlit
-.streamlit/secrets.toml
-
-# 模型文件
-*.bin
-*.safetensors
-*.pth
-
-# 數據和作業文件
-dataset/
-2025ML-spamEmail/
-HW1.py
-HW2.py
+cat > requirements.txt << 'EOF'
+streamlit==1.28.0
+torch>=2.0.0,<2.2.0
+transformers>=4.30.0,<5.0.0
+sentencepiece>=0.1.99
+nltk>=3.8
+pandas>=2.0.0
+numpy>=1.24.0,<2.0.0
+plotly>=5.14.0
+matplotlib>=3.7.0
+protobuf>=3.20.0,<4.0.0
 EOF
-
-# 確認內容
-cat .gitignore
